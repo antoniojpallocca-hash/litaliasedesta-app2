@@ -9,11 +9,11 @@ const CACHE_NOME = 'italia-sedesta-v1';
 const FILE_DA_SALVARE = [
   './index.html',
   './manifest.json',
-  './css/style.css',
-  './js/app.js',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/apple-touch-icon.png'
+  './style.css',
+  './app.js',
+  './icon-192.png',
+  './icon-512.png',
+  './apple-touch-icon.png'
 ];
 
 // ---- Installazione: salva i file base in cache ----
@@ -69,8 +69,8 @@ self.addEventListener('push', (event) => {
   const titolo = dati.title || 'L\'Italia s\'è Desta';
   const opzioni = {
     body: dati.body || 'È stato pubblicato un nuovo articolo.',
-    icon: 'icons/icon-192.png',
-    badge: 'icons/icon-192.png',
+    icon: 'icon-192.png',
+    badge: 'icon-192.png',
     data: { url: dati.url || 'https://www.litaliasedesta.it' }
   };
 

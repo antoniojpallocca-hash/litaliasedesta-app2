@@ -68,7 +68,7 @@ btnNotifiche?.addEventListener('click', () => {
       // andrà collegata la registrazione dell'utente al servizio push.
       new Notification('L\'Italia s\'è Desta', {
         body: 'Notifiche attivate correttamente!',
-        icon: 'icons/icon-192.png'
+        icon: 'icon-192.png'
       });
     }
   });
