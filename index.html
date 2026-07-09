@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
-<!-- OneSignal Web SDK -->
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(function (OneSignal) {
-    OneSignal.init({
-      appId: "527d2637-dd68-4c03-8299-5ccf4e469535",
-    });
-  });
-</script>
-d>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
   <title>L'Italia s'è Desta</title>
@@ -26,7 +16,18 @@ d>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
 
+  <!-- OneSignal Web SDK -->
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(function (OneSignal) {
+      OneSignal.init({
+        appId: "527d2637-dd68-4c03-8299-5ccf4e469535",
+      });
+    });
+  </script>
 </head>
+
 <body>
 
   <main class="home">
